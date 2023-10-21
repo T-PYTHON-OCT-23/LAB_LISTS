@@ -4,8 +4,13 @@ sum_list = list()
 items = [5 , 7, 3]
 print(items)
 
-new_list = 5 + 7 + 3
-print(new_list)
+def sum(n_list:list) -> int:
+    total = 0
+    for n in n_list:
+        total += n
+    
+    return total
+print(sum(items))
 
 #2
 largest_list = (list)
@@ -23,14 +28,9 @@ odd_list = (list)
 odd_numbers = [num for num in range(1200, 2000, 125) if num % 2 != 0]
 
 print(odd_numbers)
+
 #4
-new_slice = items[1:3]
-new_identical_list = items[:]
+new_slice = odd_numbers[1:5]
+new_identical_list = odd_numbers[:]
 print(new_slice)
 print(new_identical_list)
-
-
-
-
-
-
