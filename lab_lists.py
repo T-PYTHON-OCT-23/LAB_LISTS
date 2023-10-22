@@ -18,10 +18,7 @@ print("The sum in given list: ",sum_func(my_list))
 print("The largest number in given list: ",largest_num(my_list))
 
 #Q3-LAB-LISTS
-odd_numbers=[]
-for i in range(1200,2000,1):
-    if i%2 !=0:
-        odd_numbers.append(i)
+odd_numbers= [i for i in range(1200,2000,125) if i%2 !=0]
 print(odd_numbers)
 
 #Q4-LAB-LISTS
