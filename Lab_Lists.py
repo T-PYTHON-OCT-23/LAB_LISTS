@@ -10,11 +10,9 @@ def largest_number(larg_number):
         return max(larg_number)
 print(largest_number(larg_number=[2, 3, 4, 5, 15, 1, 43, 20])) 
 # Q3: Create an odd numbers list from the elements of a range from 1200 to 2000 with steps of 125, using [ List Comprehension ].
-odd_numbers=[]
-for n in range(1200,4000,125):
-    if n%3 == 0:
-          odd_numbers.append(n)
+odd_numbers=[n for n in range(1200,2000,125) if n % 2 !=0]
+
 print(odd_numbers) 
 # Q4: use list slicing to get a new list from the previous list (odd numbers list) starting from the start to the 5th element in the list.      
-new_list_frome_odd_number=odd_numbers[0:6]   
+new_list_frome_odd_number=odd_numbers[0:5]   
 print(new_list_frome_odd_number) 
