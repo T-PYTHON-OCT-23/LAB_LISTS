@@ -23,7 +23,7 @@ print("Largest element is:", max(list1))
 print("Q3 : ")
 oddlist2 = []
 
-for i in range(1200,2000):
+for i in range(1200,2000,125):
     if i%2 != 0:
      oddlist2.append(i)
 
